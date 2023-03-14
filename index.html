@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO App</title>
+    <!-- fontawesome & bootstrap -->
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Noto+Kufi+Arabic&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- main style -->
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">To Do</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                </ul>
+                <form class="d-flex w-75 m-auto my-2 my-lg-0">
+                    <input id="search" class="form-control  " type="text" placeholder="Search">
+                    <!-- <button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container py-4 ">
+            <div class="row row-cols-md-2 row-cols-1">
+                <div class="col">
+                    <h1 class="fw-normal text-white-50">Welcome Back</h1>
+                </div>
+                <div class="col d-flex setTask  ">
+                    <input id="textval" type="text" class="form-control me-3"  placeholder="ex.Buy Some Flower...">
+                    <button id="submit" type="submit" class="btn btn-outline-light">Submit</button>
+                </div>
+            </div>
+            <div id="warning" class="row"><p class="lead text-danger text-center my-3"> please type a task first</p></div>
+        </div>
+    </header>
+    <section class="status">
+        <div class="container">
+            <ul class="status my-3 p-0 d-flex justify-content-between align-items-center text-light">
+                <li class="">
+                    <span class=" p-2 rounded-start ">Remaining</span>
+                    <span class=" p-2 rounded-end bg-count" id="remaining-task">0</span>
+                </li>
+                <li>
+                    <span class=" p-2 rounded-start ">Completed</span>
+                    <span class=" p-2 rounded-end bg-count " id="completed-task">0</span>
+                </li>
+                <li>
+                    <span class=" p-2 rounded-start ">Total</span>
+                    <span class=" p-2 rounded-end bg-count" id="total-task">0</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <ul class=" p-0 ">
+                
+                <li class="d-flex todos rounded px-2 py-3  my-3 justify-content-between align-items-center ">
+                    <div class="task">
+                        <input type="checkbox" class="form-check-input bg-transparent rounded-circle" name="tasks" id="1">
+                        <span  class="checked ms-2">Task 1</span>
+                    </div>
+                    <button title="remove-task" class="remove-task btn btn-outline-light">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li class="d-flex todos rounded px-2 py-3  my-3 justify-content-between align-items-center ">
+                    <div class="task">
+                        <input type="checkbox" class="form-check-input bg-transparent rounded-circle" name="tasks" id="1">
+                        <span contenteditable="true" class="ms-2 editing">Task 1</span>
+                    </div>
+                    <button title="remove-task" class="remove-task btn btn-outline-light">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                
+            </ul>
+        </div>
+    </main>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
