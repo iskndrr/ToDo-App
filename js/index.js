@@ -73,5 +73,9 @@ function deleTask(taskIndex) {
     localStorage.setItem('taskList', JSON.stringify(allTasks))
     display();
 }
-
+$(".socialBtn button").click(()=>{
+    $("footer").slideToggle(1000,()=>{
+        $("footer a").fadeToggle(1000)
+    })
+})
 

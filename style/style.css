@@ -12,13 +12,21 @@
     --bg-color-main:#639b87;
     --bg-color-sec: #b9d1c8;
 }
+.socialBtn{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 999999;
+}
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 15px;
 }
 footer a{
     margin: 0 10px;
+    display: none;
 }
 .bg-count{
     background-color: var(--bg-color-sec) !important;
@@ -54,4 +62,8 @@ input,.todos{
     padding: 1rem .7rem;
     border-radius: 1rem;
     color: #fff;
+}
+
+footer{
+    display: none;
 }
