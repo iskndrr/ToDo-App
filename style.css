@@ -13,7 +13,7 @@
     --bg-color-sec: #b9d1c8;
 }
 body{
-    max-height: 100vh !important;
+    min-height: 100vh !important;
 }
 footer{
     position: fixed;
