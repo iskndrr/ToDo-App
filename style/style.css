@@ -12,6 +12,14 @@
     --bg-color-main:#639b87;
     --bg-color-sec: #b9d1c8;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    margin: 0 10px;
+}
 .bg-count{
     background-color: var(--bg-color-sec) !important;
 }
