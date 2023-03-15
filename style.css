@@ -1,0 +1,60 @@
+* {
+    font-family: 'Fraunces', serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* overflow: hidden; */
+}
+:root{
+    --bg-color-main:#639b87;
+    --bg-color-sec: #b9d1c8;
+}
+body{
+    max-height: 100vh !important;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    margin: 0 10px;
+}
+.bg-count{
+    background-color: var(--bg-color-sec) !important;
+}
+header{
+    background-color: var(--bg-color-main);
+}
+input,.todos{
+    background-color: var(--bg-color-sec) !important;
+}
+#warning{
+    display: none;
+}
+/* .task span {
+    overflow:-moz-hidden-unscrollable;
+} */
+.status li span{
+    background-color: var(--bg-color-main);
+}
+.navbar input{
+    background-color: transparent !important;
+    margin-right: 20px;
+}
+.checked{
+    background-color: var(--bg-color-main);
+    padding: 1rem .7rem;
+    border-radius: 1rem;
+    text-decoration: line-through;
+    color: #fff;
+}
+.editing{
+    background-color: var(--bg-color-main);
+    padding: 1rem .7rem;
+    border-radius: 1rem;
+    color: #fff;
+}
